@@ -1,6 +1,6 @@
 # Storybook, React, TypeScript and MUI Template
 
-- [Storybook]
+- [Storybook 7]
 - [React]
 - [TypeScript]
 - [MUI]
@@ -13,10 +13,10 @@
 
 ## Reference
 
-Material UI in Storybook  
-<https://storybook.js.org/blog/material-ui-in-storybook/>
+Getting started with @mui/material  
+<https://github.com/storybookjs/addon-styling/blob/next/docs/getting-started/material-ui.md>
 
-[Storybook]: https://storybook.js.org/ "Storybook"
+[Storybook 7]: https://storybook.js.org/ "Storybook"
 [React]: https://reactjs.org/ "React"
 [TypeScript]: https://www.typescriptlang.org/ "TypeScript"
 [MUI]: https://mui.com/ "MUI"

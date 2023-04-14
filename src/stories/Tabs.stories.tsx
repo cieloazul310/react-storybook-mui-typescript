@@ -1,19 +1,24 @@
 import * as React from 'react';
-import type { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react';
 import Box from '@mui/material/Box';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 
-export default {
+const meta: Meta<typeof Tabs> = {
   /* 👇 The title prop is optional.
    * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
    * to learn how to generate automatic titles
    */
-  title: 'Tabs',
+  title: 'Example/Tabs',
   component: Tabs,
-} as ComponentMeta<typeof Tabs>;
+  tags: ['autodocs'],
+};
 
-export const Basic: ComponentStory<typeof Tabs> = () => {
+export default meta;
+
+type Story = StoryObj<typeof Tabs>;
+
+const BasicWithHooks = () => {
   const [value, setValue] = React.useState(0);
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
@@ -28,7 +33,11 @@ export const Basic: ComponentStory<typeof Tabs> = () => {
   );
 };
 
-export const Secondary: ComponentStory<typeof Tabs> = () => {
+export const Basic: Story = {
+  render: () => <BasicWithHooks />,
+};
+
+const SecondaryWithHooks = () => {
   const [value, setValue] = React.useState(0);
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
@@ -46,6 +55,10 @@ export const Secondary: ComponentStory<typeof Tabs> = () => {
       <Tab label="Three" />
     </Tabs>
   );
+};
+
+export const Secondary: Story = {
+  render: () => <SecondaryWithHooks />,
 };
 
 type TabPanelProps = React.PropsWithChildren<{
@@ -66,7 +79,7 @@ function TabPanel({ children, value, index }: TabPanelProps) {
   );
 }
 
-export const WithTabPane: ComponentStory<typeof Tabs> = () => {
+const WithTabPaneWithHooks = () => {
   const [value, setValue] = React.useState(0);
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
@@ -97,4 +110,8 @@ export const WithTabPane: ComponentStory<typeof Tabs> = () => {
       </TabPanel>
     </Box>
   );
+};
+
+export const WithTabPane: Story = {
+  render: () => <WithTabPaneWithHooks />,
 };
