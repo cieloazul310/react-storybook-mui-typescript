@@ -1,10 +1,10 @@
-# Storybook, React, TypeScript and MUI Template
+# Storybook, React, TypeScript and Material-UI Template
 
-- [Storybook 7]
-- [React]
+- [Storybook] v8
+- [React] v18
+- [Material-UI] v6
+- [ESLint] v8
 - [TypeScript]
-- [MUI]
-- [ESLint]
 - [Prettier]
 
 ## Demo
@@ -16,9 +16,9 @@
 Getting started with @mui/material  
 <https://github.com/storybookjs/addon-styling/blob/next/docs/getting-started/material-ui.md>
 
-[Storybook 7]: https://storybook.js.org/ "Storybook"
+[Storybook]: https://storybook.js.org/ "Storybook"
 [React]: https://reactjs.org/ "React"
 [TypeScript]: https://www.typescriptlang.org/ "TypeScript"
-[MUI]: https://mui.com/ "MUI"
+[Material-UI]: https://mui.com/ "Material-UI"
 [ESLint]: https://eslint.org/ "ESLint"
 [Prettier]: https://prettier.io/ "Prettier"
