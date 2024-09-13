@@ -4,15 +4,14 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true,
+    es2024: true,
     node: true,
   },
   extends: [
     "airbnb",
     "airbnb-typescript",
-    "airbnb/hooks",
-    "plugin:@typescript-eslint/recommended",
-    "eslint-config-prettier",
+    "plugin:react/jsx-runtime",
+    "prettier",
     "plugin:storybook/recommended",
   ],
   parser: "@typescript-eslint/parser",
@@ -26,6 +25,7 @@ module.exports = {
   },
   rules: {
     "react/require-default-props": "off",
+    "react/jsx-props-no-spreading": "off",
   },
   overrides: [
     {
